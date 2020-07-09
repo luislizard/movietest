@@ -1,0 +1,14 @@
+.movie-detais .movie-content{
+  width: 50%;
+  float: left;
+}
+
+.movie-detais .movie-image{
+  width: 50%;
+  float: right;
+}
+
+.movie-detais .movie-image img{
+  width: 500px;
+  margin-left: 2em;
+}

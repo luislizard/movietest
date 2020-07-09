@@ -1,0 +1,14 @@
+<button><mat-icon (click)="backClicked()" >keyboard_arrow_left</mat-icon></button>
+<section class="movie-detais">
+  <div class="movie-content">
+    <h1>{{movie?.title}} ({{movie?.year}})</h1>
+    <p>{{movie?.plot}}</p>
+  <app-rating *ngFor="let category of categories" [activeStars]="2" [actualCategory]="category" [actualMovieId]="movie?.id"></app-rating>
+</div>
+<div class="movie-image">
+  <img mat-card-image src="{{ movie?.poster }}" alt="{{movie?.title}}">
+</div>
+</section>
+
+
+

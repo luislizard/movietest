@@ -1,0 +1,52 @@
+.movie-list{
+  padding: 0;
+  margin: 0;
+}
+.movie-list a{
+  text-decoration: none;
+}
+
+.movie-item .movie-title{
+  width: 83%;
+  min-height: 50px;
+  color:#fff;
+  font-weight: 300;
+  position: absolute;
+  top:25px;
+  left:0;
+  padding: 10px;
+  text-shadow: 2px 2px 2px grey;
+
+  background: rgba(41,41,41,1);
+  background: -moz-linear-gradient(top, rgba(41,41,41,1) 0%, rgba(250,250,250,0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(41,41,41,1)), color-stop(100%, rgba(250,250,250,0)));
+  background: -webkit-linear-gradient(top, rgba(41,41,41,1) 0%, rgba(250,250,250,0) 100%);
+  background: -o-linear-gradient(top, rgba(41,41,41,1) 0%, rgba(250,250,250,0) 100%);
+  background: -ms-linear-gradient(top, rgba(41,41,41,1) 0%, rgba(250,250,250,0) 100%);
+  background: linear-gradient(to bottom, rgba(41,41,41,1) 0%, rgba(250,250,250,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292929', endColorstr='#fafafa', GradientType=0 );
+
+}
+
+.movie-item .movie-button{
+  display: none;
+  background-color: purple;
+  color:#fff;
+  position: absolute;
+  bottom:50px;
+  left:10px;
+  text-shadow: 2px 2px 2px grey;
+}
+.movie-item:hover .movie-button{
+ display: block;
+}
+
+.movie-item:hover .movie-title{
+  display: block;
+}
+
+.movie-card img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}

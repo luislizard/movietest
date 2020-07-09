@@ -1,0 +1,25 @@
+<section>
+  <form (ngSubmit)="searchMovies(search)">
+    <mat-form-field class="example-form-field">
+      <mat-label>Find a Movie</mat-label>
+      <input name="search" matInput [(ngModel)]="search" placeholder="Type the movie name">
+    </mat-form-field>
+    <button mat-stroked-button color="primary">Search</button>
+  </form>
+</section>
+
+<section>
+  <mat-grid-list class="movie-list" cols="4" rowHeight="3:5">
+    <mat-grid-tile *ngFor="let movie of movies"  class="movie-item">
+      <a routerLink="/movie/{{movie.id}}">
+        <mat-card class="movie-card">
+          <mat-card-header>
+            <mat-card-title class="movie-title">{{movie.title}}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="{{ movie.image }}" alt="{{movie.title}}">
+          <button class="movie-button" mat-stroked-button>See More</button>
+        </mat-card>
+      </a>
+    </mat-grid-tile>
+  </mat-grid-list>
+</section>

@@ -1,0 +1,8 @@
+<mat-card class="mat-elevation-z4 rating-item">
+  <h3>{{actualCategory}}</h3>
+  <mat-icon *ngFor="let star of stars; let i = index" class="star" [ngClass]="{'active-star': i < activeStars}"
+    (click)="onStarClick(i,actualCategory, actualMovieId)">star</mat-icon>
+
+  <div class="rating-summary">{{activeStars}} de {{stars.length}} </div>
+</mat-card>
+<br>
